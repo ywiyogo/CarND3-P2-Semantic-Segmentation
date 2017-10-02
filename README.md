@@ -1,17 +1,15 @@
 # Semantic Segmentation in Advanced Deep Learning
 
-#Project Summary
-
 In this project, I've built a Fully Convolutional Network in order to segment camera images, whether an area is a road or not. The camera is mounted inside a vehicle. The approach of the semantic segmentation is based on the this [publication](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf).
 
 After running this project, the main program will generate a `logs` directory for the visualization using tensorboard and a `runs` directory which contains the segmented images from the input datasets.
 
-## Network Architecture
+### Network Architecture
 Tensorflow provides a tool `tensorboard` to visualize the Convolutional Network. The below figure shows the overview of the VGG16 architecture and the additional upsampling and skipping layers in this project:
 
 ![architecture][image1]
 
-## Result
+### Results
 
 Based on my limited experiments, I found out that the number of the epochs returns more visual difference on the images. Applying these fix hyperparameters:
 
